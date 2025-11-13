@@ -42,14 +42,12 @@ async def on_ready():
         if a[0]:  # checkforticket returns True!
             # discord bot function goes right here
             channel = client.get_channel(config.CHANNEL_ID)
-            await channel.send("@everyone go go go go go!!!!")
-            channel = client.get_channel(config.TEXT_CHANNEL_ID) #sends text in channel for testing purposes
-            await channel.send(last_ticket)
-
+            await channel.send("@everyone go go go go go!!!!") #pings everyone
         time.sleep(random.random() * 90)
         # adds a random time delay to the check, makes it more "human"
 
 client.run(config.BOT_TOKEN)
+
 
 
 
